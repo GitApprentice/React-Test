@@ -1,38 +1,586 @@
-.App {
-  text-align: center;
+@media screen and (max-width: 600px) {	
+	* {
+		margin: 0;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+
+	select,
+	textarea,
+	input {
+		font-size: 16px;
+	}
+  
+	body {
+		font-family: 'montseratt', sans-serif;
+	}
+  
+	.app {
+		background-size: cover;
+		background-position: bottom;
+		transition: 0.4 ease-out;
+		min-height: 100vh;
+		max-height: 100vh;
+	}
+  
+	.sunny {
+		background-image: url('./images/Sunny.jpg');
+	}
+  
+	.cloudy {
+		background-image: url('./images/Cloudy.jpg');
+	}
+  
+	.overcast {
+		background-image: url('./images/Overcast.jpg');
+	}
+  
+	.rainy {
+		background-image: url('./images/Rainy.jpg');
+	}
+  
+	.snowy {
+		background-image: url('./images/Snowy.jpg');
+	}
+  
+	.default {
+		background-image: url('./images/Open Weather Map Logo.jpg');
+	}
+  
+	main {
+		min-height: 100vh;
+		max-height: 100vh;
+		padding-top: 15%;
+	}
+  
+	.search-box {
+		width: 100%;
+		margin: 0 0 6%;
+	}
+  
+	.search-box .search-bar {
+		display: block;
+		width: 100%;
+		padding: 15px;
+		appearance: none;
+		background: none;
+		border: none;
+		outline: none;
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0 0 10px 5px rgb(85, 85, 85);
+		transition: 0.4 ease;
+	}
+  
+	.search-box .search-bar:focus {
+		background-color:rgba(255, 255, 255, 1.0) 
+	}
+  
+	.data-box {
+		padding: 2.5%;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 16px;
+	}
+  
+	.location {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+	}
+  
+	.date {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-style: italic;
+		text-align: center;
+	}
+  
+	.temp {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 78px;
+		text-align: center;
+		margin: 6%;
+	}
+  
+	.weather {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 30px;
+		font-weight: 600;
+		text-align: center;
+	}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (min-width: 600px) and (max-height: 500px) {
+	* {
+		margin: 0;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+
+	select,
+	textarea,
+	input {
+		font-size: 16px;
+	}
+
+	body {
+		font-family: 'montseratt', sans-serif;
+	}
+
+	.app {
+		background-size: cover;
+		background-position: bottom;
+		transition: 0.4 ease-out;
+		min-height: 100vh;
+		max-height: 100vh;
+	}
+
+	.sunny {
+		background-image: url('./images/Sunny.jpg');
+	}
+
+	.cloudy {
+		background-image: url('./images/Cloudy.jpg');
+	}
+
+	.overcast {
+		background-image: url('./images/Overcast.jpg');
+	}
+
+	.rainy {
+		background-image: url('./images/Rainy.jpg');
+	}
+
+	.snowy {
+		background-image: url('./images/Snowy.jpg');
+	}
+
+	.default {
+		background-image: url('./images/Open Weather Map Logo.jpg');
+	}
+
+	main {
+		position: relative;
+		min-height: 100vh;
+		max-height: 100vh;
+		padding: 2%;
+	}
+
+	.search-box {
+		width: 100%;
+		margin: 0 0 6%;
+	}
+
+	.search-box .search-bar {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		padding: 15px;
+		appearance: none;
+		background: none;
+		border: none;
+		outline: none;
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0 0 10px 5px rgb(85, 85, 85);
+		transition: 0.4 ease;
+	}
+
+	.search-box .search-bar:focus {
+		background-color:rgba(255, 255, 255, 1.0) 
+	}
+
+	.data-box {
+		margin: 0 auto;
+		width: 100%;
+		padding: 1%;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 16px;
+	}
+
+	.location {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 22px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.date {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-style: italic;
+		text-align: center;
+	}
+
+	.temp {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 48px;
+		text-align: center;
+		margin: 1%;
+	}
+
+	.weather {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 24px;
+		font-weight: 600;
+		text-align: center;
+	}  
+} 
+
+@media screen and (min-width: 600px) and (min-height: 500px) {	
+	* {
+		margin: 0;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+
+	select,
+	textarea,
+	input {
+		font-size: 16px;
+	}
+  
+	body {
+		font-family: 'montseratt', sans-serif;
+	}
+  
+	.app {
+		background-size: cover;
+		background-position: bottom;
+		transition: 0.4 ease-out;
+		min-height: 100vh;
+		max-height: 100vh;
+	}
+  
+	.sunny {
+		background-image: url('./images/Sunny.jpg');
+	}
+  
+	.cloudy {
+		background-image: url('./images/Cloudy.jpg');
+	}
+  
+	.overcast {
+		background-image: url('./images/Overcast.jpg');
+	}
+  
+	.rainy {
+		background-image: url('./images/Rainy.jpg');
+	}
+  
+	.snowy {
+		background-image: url('./images/Snowy.jpg');
+	}
+  
+	.default {
+		background-image: url('./images/Open Weather Map Logo.jpg');
+	}
+  
+	main {
+		min-height: 100vh;
+		max-height: 100vh;
+		padding-top: 5%;
+	}
+  
+	.search-box {
+		width: 100%;
+		margin: 0 0 6%;
+	}
+  
+	.search-box .search-bar {
+		display: block;
+		width: 100%;
+		padding: 15px;
+		appearance: none;
+		background: none;
+		border: none;
+		outline: none;
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0 0 10px 5px rgb(85, 85, 85);
+		transition: 0.4 ease;
+	}
+  
+	.search-box .search-bar:focus {
+		background-color:rgba(255, 255, 255, 1.0) 
+	}
+  
+	.data-box {
+		padding: 2.5%;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 16px;
+	}
+  
+	.location {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+	}
+  
+	.date {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-style: italic;
+		text-align: center;
+	}
+  
+	.temp {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 78px;
+		text-align: center;
+		margin: 6%;
+	}
+  
+	.weather {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 30px;
+		font-weight: 600;
+		text-align: center;
+	}
+} 
+
+@media screen and (min-width: 1000px) {
+	* {
+		margin: 0;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+
+	select,
+	textarea,
+	input {
+		font-size: 16px;
+	}
+
+	body {
+		font-family: 'montseratt', sans-serif;
+	}
+
+	.app {
+		background-size: cover;
+		background-position: bottom;
+		transition: 0.4 ease-out;
+		min-height: 100vh;
+		max-height: 100vh;
+	}
+
+	.sunny {
+		background-image: url('./images/Sunny.jpg');
+	}
+
+	.cloudy {
+		background-image: url('./images/Cloudy.jpg');
+	}
+
+	.overcast {
+		background-image: url('./images/Overcast.jpg');
+	}
+
+	.rainy {
+		background-image: url('./images/Rainy.jpg');
+	}
+
+	.snowy {
+		background-image: url('./images/Snowy.jpg');
+	}
+
+	.default {
+		background-image: url('./images/Open Weather Map Logo.jpg');
+	}
+
+	main {
+		min-height: 100vh;
+		max-height: 100vh;
+		padding: 5%;
+	}
+
+	.search-box {
+		width: 100%;
+		margin: 0 0 6%;
+	}
+
+	.search-box .search-bar {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		padding: 15px;
+		appearance: none;
+		background: none;
+		border: none;
+		outline: none;
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0 0 10px 5px rgb(85, 85, 85);
+		transition: 0.4 ease;
+	}
+
+	.search-box .search-bar:focus {
+		background-color:rgba(255, 255, 255, 1.0) 
+	}
+
+	.data-box {
+		margin: 0 auto;
+		width: 80%;
+		padding: 2.5%;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 16px;
+	}
+
+	.location {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 32px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.date {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-style: italic;
+		text-align: center;
+	}
+
+	.temp {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 92px;
+		text-align: center;
+		margin: 6%;
+	}
+
+	.weather {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 32px;
+		font-weight: 600;
+		text-align: center;
+	}  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@media screen and (min-width: 1950px) {
+	* {
+		margin: 0;
+		padding: 0px;
+		box-sizing: border-box;
+	}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+	select,
+	textarea,
+	input {
+		font-size: 16px;
+	}
 
-.App-link {
-  color: #61dafb;
-}
+	body {
+		font-family: 'montseratt', sans-serif;
+	}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	.app {
+		background-size: cover;
+		background-position: bottom;
+		transition: 0.4 ease-out;
+		min-height: 100vh;
+		max-height: 100vh;
+	}
+
+	.sunny {
+		background-image: url('./images/Sunny.jpg');
+	}
+
+	.cloudy {
+		background-image: url('./images/Cloudy.jpg');
+	}
+
+	.overcast {
+		background-image: url('./images/Overcast.jpg');
+	}
+
+	.rainy {
+		background-image: url('./images/Rainy.jpg');
+	}
+
+	.snowy {
+		background-image: url('./images/Snowy.jpg');
+	}
+
+	.default {
+		background-image: url('./images/Open Weather Map Logo.jpg');
+	}
+
+	main {
+		position: relative;
+		min-height: 100vh;
+		max-height: 100vh;
+		padding: 5%;
+	}
+
+	.search-box {
+		width: 100%;
+		margin: 0 0 6%;
+	}
+
+	.search-box .search-bar {
+		display: block;
+		margin: 0 auto;
+		width: 70%;
+		padding: 15px;
+		appearance: none;
+		background: none;
+		border: none;
+		outline: none;
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0 0 10px 5px rgb(85, 85, 85);
+		transition: 0.4 ease;
+	}
+
+	.search-box .search-bar:focus {
+		background-color:rgba(255, 255, 255, 1.0) 
+	}
+
+	.data-box {
+		margin: 0 auto;
+		top: 5%;
+		width: 70%;
+		padding: 2.5%;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 16px;
+	}
+
+	.location {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 32px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.date {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-style: italic;
+		text-align: center;
+	}
+
+	.temp {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 92px;
+		text-align: center;
+		margin: 6%;
+	}
+
+	.weather {
+		color: rgb(0, 0, 0);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
+		font-size: 32px;
+		font-weight: 600;
+		text-align: center;
+	}  
 }
