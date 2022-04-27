@@ -69,9 +69,9 @@
 		background-color:rgba(255, 255, 255, 1.0) 
 	}
 
-  .search-bar {
-    font-size: 17px;
-  }
+	.search-bar {
+		font-size: 17px;
+	}
   
 	.data-box {
 		padding: 2.5%;
@@ -184,9 +184,9 @@
 		background-color:rgba(255, 255, 255, 1.0) 
 	}
 
-  .search-bar {
-    font-size: 17px;
-  }
+	.search-bar {
+		font-size: 17px;
+	}
 
 	.data-box {
 		margin: 0 auto;
@@ -297,6 +297,10 @@
   
 	.search-box .search-bar:focus {
 		background-color:rgba(255, 255, 255, 1.0) 
+	}
+
+	.search-bar {
+		font-size: 17px;
 	}
   
 	.data-box {
@@ -409,7 +413,11 @@
 		background-color:rgba(255, 255, 255, 1.0) 
 	}
 
-  .data-box {
+	.search-bar {
+		font-size: 17px;
+	}
+
+  	.data-box {
 		margin: 0 auto;
 		width: 80%;
 		padding: 2.5%;
@@ -520,6 +528,10 @@
 
 	.search-box .search-bar:focus {
 		background-color:rgba(255, 255, 255, 1.0) 
+	}
+
+	.search-bar {
+		font-size: 17px;
 	}
 
 	.data-box {
