@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Test/static/css/main.a42b7245.css",
-    "main.js": "/React-Test/static/js/main.3e02d5e8.js",
+    "main.css": "/React-Test/static/css/main.0fdca2c0.css",
+    "main.js": "/React-Test/static/js/main.9a0308ba.js",
     "static/js/787.d495654f.chunk.js": "/React-Test/static/js/787.d495654f.chunk.js",
     "static/media/Overcast.jpg": "/React-Test/static/media/Overcast.7c1239bbf52a9f5fd4f8.jpg",
     "static/media/Cloudy.jpg": "/React-Test/static/media/Cloudy.753e2c0cbac5bfb9e5e3.jpg",
@@ -10,12 +10,12 @@
     "static/media/Sunny.jpg": "/React-Test/static/media/Sunny.63123bd84996848bd9d6.jpg",
     "static/media/Open Weather Map Logo.jpg": "/React-Test/static/media/Open Weather Map Logo.46dc0366f14597368bc1.jpg",
     "index.html": "/React-Test/index.html",
-    "main.a42b7245.css.map": "/React-Test/static/css/main.a42b7245.css.map",
-    "main.3e02d5e8.js.map": "/React-Test/static/js/main.3e02d5e8.js.map",
+    "main.0fdca2c0.css.map": "/React-Test/static/css/main.0fdca2c0.css.map",
+    "main.9a0308ba.js.map": "/React-Test/static/js/main.9a0308ba.js.map",
     "787.d495654f.chunk.js.map": "/React-Test/static/js/787.d495654f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a42b7245.css",
-    "static/js/main.3e02d5e8.js"
+    "static/css/main.0fdca2c0.css",
+    "static/js/main.9a0308ba.js"
   ]
 }
