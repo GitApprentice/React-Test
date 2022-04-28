@@ -27,7 +27,7 @@ function App() {
           console.log(result);  
         })
         .catch(() => {
-          alert('Please enter city name & spell correctly');
+          alert('Please enter city name correctly');
         }); 
     }
   } 
